@@ -1,0 +1,18 @@
+<div class="report-page">
+  <h1>Report Encounter</h1>
+  <p>Safety on Mars is your responsibility</p>
+  <form action class="app-form">
+    <fieldset>
+      <div class="alien-select" action="" ng-submit="submitReports()">
+        <select name="aliensType" id="aliens" ng-model="report.atype">
+          <option value="">--Select Alien Type--</option>
+          <option value="{{ alien.type }}" ng-repeat="alien in aliens">{{ alien.type }}</option>
+        </select>
+      </div>
+      <textarea ng-model="report.action" placeholder="Action taken"></textarea>
+    </fieldset>
+    <fieldset>
+      <button class="button" ng-click="submit($event)">Submit Report</button>
+    </fieldset>
+  </form>
+</div>

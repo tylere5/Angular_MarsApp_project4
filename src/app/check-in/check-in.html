@@ -1,0 +1,19 @@
+<div class="check-in">
+  <h1>Register</h1>
+  <form action="" class="app-form" ng-submit="login()">
+    <fieldset>
+      <label for="">name:</label>
+      <input type="text" ng-model="colonist.name" placeholder="Name"> <br>
+      <label for="">age:</label>
+      <input type="number" ng-model="colonist.age" placeholder="Age"> <br>
+
+      <div class="job-select">
+        <select name="jobs" id="jobs" ng-model="colonist.job_id">
+          <option value=""> -- Select Occupation --</option>
+          <option value="{{ job.id }}" ng-repeat="job in jobs">{{ job.name }}</option>
+        </select>
+      </div>
+    </fieldset>
+    <button ng-click="login($event)" class="check-in-button">Check In</button>
+  </form>
+</div>
