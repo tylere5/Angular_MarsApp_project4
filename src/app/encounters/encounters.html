@@ -1,10 +1,11 @@
 <div class="encounters-page">
-  <h1>Recent Encounter</h1>
-  <p>See an Alien? Report it!</p>
+  <h1 class="titles">Recent Alien Encounters
+    <span>Alien encounter? Report it!</span>
+  </h1>
   <ul class="encounter-list" ng-model="encounter.id">
     <li ng-repeat="data in encounters">{{ data.date }} {{ data.atype }} {{ data.action }}</li>
   </ul>
   <footer>
-    <button ng-click="gotoreport()" class="button">Report Encounter</button>
+    <button ng-click="gotoreport()" class="check-in-button">Report Encounter</button>
   </footer>
 </div>

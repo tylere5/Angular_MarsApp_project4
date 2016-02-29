@@ -34,7 +34,7 @@
           url: REPORT_POST_URL,
           data: { 'encounter' : $scope.report }
         }).then(function(response){
-          console.log(response);
+          $state.go('encounters');
         }, function(error){
           console.log(error);
         });
