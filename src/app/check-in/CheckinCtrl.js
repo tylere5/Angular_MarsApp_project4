@@ -35,7 +35,6 @@
         $cookies.putObject('mars_user', response.data.colonist);
         $state.go('encounters');
       }, function(error){
-        console.log(error);
       });
     };
 
