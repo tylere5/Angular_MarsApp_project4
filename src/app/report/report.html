@@ -1,18 +1,26 @@
 <div class="report-page">
-  <h1 class="titles">Report Encounter</h1>
-  <form action class="app-form ng-invalid ng-invalid-required ng-pristine" ng-class="{ 'show-validation' : showValidation }">
-    <fieldset>
-      <div class="alien-select" action="" ng-submit="submitReports()">
-        <select name="aliensType" id="aliens" ng-model="report.atype">
-          <option value="">Select Alien Type</option>
-          <option value="{{ alien.type }}" ng-repeat="alien in aliens">{{ alien.type }}</option>
-        </select>
-      </div>
-      <textarea id rows="10" ng-model="report.action" placeholder="Action taken" required class="ng-invalid
-        ng-invalid-required ng-empty ng-pristine ng-untouched"></textarea>
-    </fieldset>
+  <header>
+    <h1 class="titles">Report Encounter</h1>
+    <p class="sub-text">Safety on Colony 1 is your responsibility</p>
+  </header>
+
+  <section>
+    <form action class="app-form ng-invalid ng-invalid-required ng-pristine" ng-class="{ 'show-validation' : showValidation }">
+      <fieldset>
+        <div class="alien-select" action="" ng-submit="submitReports()">
+          <select name="aliensType" id="aliens" ng-model="report.atype">
+            <option value="">Select Alien Type</option>
+            <option value="{{ alien.type }}" ng-repeat="alien in aliens">{{ alien.type }}</option>
+          </select>
+        </div>
+        <textarea rows="10" ng-model="report.action" placeholder="Action Taken"></textarea>
+      </fieldset>
+    </form>
+  </section>
+
+  <footer>
     <fieldset>
       <button class="check-in-button" ng-click="submit($event)">Submit Report</button>
     </fieldset>
-  </form>
+  </footer>
 </div>
