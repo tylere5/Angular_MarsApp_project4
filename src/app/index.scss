@@ -11,7 +11,6 @@
 @import "./report/report";
 @import "./report/report-filed";
 @import "animations.scss";
-
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
 
 $red-color: #ed4343;
@@ -23,6 +22,8 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-y: scroll;
+  overflow-y: hidden;
   font-family: $red-font;
   background: black;
 }
@@ -48,6 +49,10 @@ html, body {
 
 	img { width: 42%; }
   h1  { text-align: center; }
+
+.footer {
+  height: 25vh;
+}
 
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
