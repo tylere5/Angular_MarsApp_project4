@@ -111,6 +111,11 @@ select {
   width: 80vw;
 }
 
+[ui-view]>div {
+  width: 100vw;
+  height: 100vh;
+}
+
 .invalid {
   transition: .5s linear all;
     input, select, textarea {
@@ -120,6 +125,7 @@ select {
       }
     }
 }
+
 // .welcome {
 //
 // 	height: 84vh;

@@ -1,3 +1,27 @@
+.welcome {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background: black;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.pulse-area {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &hover {
+    cursor: pointer;
+  }
+}
 
 .pulse-container {
   width: 200px;
@@ -5,29 +29,20 @@
   margin: 0 auto 0;
   -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
-  background: black;
 }
 
 .pulse-button {
   position: relative;
-  top: 50%;
+  top: 55%;
   left: 50%;
   margin-left: -50px;
   margin-top: -150px;
   display: block;
   width: 100px;
   height: 100px;
-  font-size: 1.3em;
-  font-weight: light;
-  font-family: 'Trebuchet MS', sans-serif;
-  text-transform: uppercase;
   text-align: center;
-  line-height: 100px;
-  letter-spacing: -1px;
-  color: white;
   border: none;
   border-radius: 50%;
-  background: red transparent;
   cursor: pointer;
   box-shadow: 0 0 0 0 rgba(red, .5);
   -webkit-animation: pulse 1.5s infinite;
