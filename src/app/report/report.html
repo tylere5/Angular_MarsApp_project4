@@ -1,12 +1,11 @@
 <div class="report-page">
-  <header>
-    <h1 class="titles">Report Encounter</h1>
+  <header class="header report-header">
+    <h1>Report Encounter</h1>
     <p class="sub-text">Safety on Colony 1 is your responsibility</p>
   </header>
 
-  <section>
-    <form action class="app-form ng-invalid ng-invalid-required ng-pristine" ng-class="{ 'show-validation' : showValidation }">
-      <fieldset>
+  <section class="report-form">
+    <form action class="app-form" novalidate name="validateForm" ng-class="{ 'invalid': validate }">
         <div class="alien-select" action="" ng-submit="submitReports()">
           <select name="aliensType" id="aliens" ng-model="report.atype">
             <option value="">Select Alien Type</option>
@@ -14,13 +13,10 @@
           </select>
         </div>
         <textarea rows="10" ng-model="report.action" placeholder="Action Taken"></textarea>
-      </fieldset>
     </form>
   </section>
 
-  <footer>
-    <fieldset>
-      <button class="check-in-button" ng-click="submit($event)">Submit Report</button>
-    </fieldset>
+  <footer class="page-footer">
+      <h2 class="check-in-button" ng-click="submit($event)">Submit Report</h2>
   </footer>
 </div>

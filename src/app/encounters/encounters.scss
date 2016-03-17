@@ -1,15 +1,24 @@
+.encounters-page {
+  overflow: hidden;
+}
+
+.encounter-header {
+  position: fixed;
+}
+
 .encounter-list {
-  background: white;
-  line-height: 30px;
+  height: 50vh;
+  margin-top: 25vh;
+  overflow: auto;
 }
 
 ul {
-  overflow-x: hidden;
-  height: 50vh;
-  list-style: none;
+  margin: 0;
+  padding: 0 1rem;
 }
 
-.sub-text {
-  text-align: center;
-  color: white;
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 1rem;
 }

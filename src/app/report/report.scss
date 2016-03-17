@@ -1,7 +1,16 @@
-textarea {
-  width: 93%;
-  line-height: 1rem;
-  font-family: Arial;
-  padding: .5rem;
-  margin-top: 1rem;
+.report-page {
+  background: black;
+  color: white;
+}
+
+.report-form {
+
+  & select {
+    margin-bottom: 1rem;
+  }
+
+  & textarea {
+    background: white;
+    color: red;
+  }
 }
