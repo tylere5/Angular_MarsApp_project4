@@ -1,7 +1,4 @@
-/*.ui-view-container {
-  position: relative;
-  height: 65px;
-}*/
+/* Page Transition Animations ----------------------------------------- */
 
 [ui-view].ng-enter, [ui-view].ng-leave {
   position: absolute;
@@ -39,4 +36,18 @@
   -webkit-transform:translate3d(100px, 0, 0);
   -moz-transform:translate3d(100px, 0, 0);
   transform:translate3d(100px, 0, 0);
+}
+
+/* Invalid Form Animations --------------------------------------------*/
+
+@keyframes invalid {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 1);
+  }
+  50% {
+    box-shadow: 0 0 0 5px rgba(255, 0, 0, .5);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+  }
 }
