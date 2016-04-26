@@ -13,6 +13,7 @@ during that encounter.
 * Gulp and Browser-sync
 
 ## Thoughts on this Project
-This was a fun project to do from start to finish! I really enjoyed building this
-app using Angular. I also enjoyed working with API's again, even though it was a bit
-of a headache making sure they were called properly!
+I really enjoyed learning and working with Angular. Once I got past the learning
+curve with Angular, I really enjoyed building this app and found working with Angular
+was very straight forward. Also, the online documentation for Angular was a great
+resource and helped explain concepts that helped me complete this project.
